@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "adsfsd\n\nblogdown::new_site() \nblogdown::install_theme('vickylaiio/hugo-theme-introduction') \n",
+    "created" : 1500375595134.000,
+    "dirty" : true,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3606779140",
+    "id" : "1DD8BAD4",
+    "lastKnownWriteTime" : 1500375610,
+    "last_content_update" : 1500375621623,
+    "path" : "~/Dropbox/nae_web/README.md",
+    "project_path" : "README.md",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "markdown"
+}

@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "baseurl             = \"/\" # Must end with /\nlanguageCode        = \"en-us\"\ntitle               = \"Introduction\"\ntheme               = \"introduction\"\nenforce_ssl         = \"your-url.com\"\nbuilddrafts         = false\ncanonifyurls        = true\ncontentdir          = \"content\"\nlayoutdir           = \"layouts\"\npublishdir          = \"public\"\n# disqusshortname   = \"xxx\" # Enable Disqus for comments\n# googleAnalytics   = \"xxx\"\n\n[permalinks]\nfixed = \":title/\"\nblog  = \"blog/:slug/\"\n\n[params]\nauthor        = \"A Clever Author\" # Full name shows on blog post pages\nfirstname     = \"awesome\" # First name shows in introduction on main page\ntagline       = \"I'm a theme for Hugo.\" # Appears after the introduction\nintroheight   = \"large\" # Input either 'medium' or 'large' or 'fullheight'\ntheme         = \"dark\" # Choose 'light' or 'dark'\navatar        = \"img/profile.png\" # Path to image in static folder eg. img/avatar.png \nemail         = \"youremail@email.com\" # Shows in contact section, or leave blank to omit\nlocaltime     = true # Show your current local time in contact section\ntimezone      = \"America/Los_Angeles\" # Your timezone as in the TZ* column of this list: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones\ndateform      = \"Jan 2, 2006\"\ndateformfull  = \"Mon Jan 2 2006 15:04:05 EST\"\ncachebuster   = true # Add the current unix timestamp in query string for cache busting css assets\ndescription   = \"Website Description\"\nfaviconfile   = \"img/fav.ico\"\nhighlightjs   = true # Syntax highlighting\nlang          = \"en\"\nfootertext    = \"\" # Text to show in footer (overrides default text)\nfadein        = true # Turn on/off the fade-in effect\n\nshowblog        = true # Show Blog section on home page\nshowallposts    = false # Set 'true' to list all posts on home page, or set 'false' to link to separate blog list page\nshowlatest      = true # Show latest blog post summary\nsharebuttons    = true # On post pages, show share this social buttons\n\nshowprojects    = true # Show Projects section on home page\n\n# This is your projects section. Three images of the same dimensions will look the nicest. If images are omitted, text links will be shown.\nproject1link    = \"#\"\nproject1img     = \"img/project1.jpg\"\nproject1title   = \"Project 1\"\n\nproject2link    = \"#\"\nproject2img     = \"img/project2.jpg\"\nproject2title   = \"Project 2\"\n\nproject3link    = \"#\"\nproject3img     = \"img/project3.jpg\"\nproject3title   = \"Project 3\"\n\n\n# Social icons appear in introduction and contact section. Add as many more as you like.\n# Find icon names here: http://fontawesome.io/cheatsheet/\n\n[[params.social]]\nurl = \"https://twitter.com/\"\nicon = \"twitter\"\n\n[[params.social]]\nurl = \"https://facebook.com/\"\nicon = \"facebook\"\n\n[[params.social]]\nurl = \"https://linkedin.com/\"\nicon = \"linkedin\"\n",
+    "created" : 1500375669172.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "71288928",
+    "id" : "11FF754E",
+    "lastKnownWriteTime" : 1500375704,
+    "last_content_update" : 1500375704909,
+    "path" : "~/Dropbox/nae_web/config.toml",
+    "project_path" : "config.toml",
+    "properties" : {
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "text"
+}
