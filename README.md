@@ -1,4 +1,4 @@
 adsfsd
 
 blogdown::new_site() 
-blogdown::install_theme('vickylaiio/hugo-theme-introduction') 
+blogdown::install_theme('digitalcraftsman/hugo-strata-theme') 
