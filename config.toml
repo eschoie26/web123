@@ -11,7 +11,7 @@ paginate = 10
 [params]
 	# To provide some metadata for search engines feel free to add a few
     # information about you and your website.
-	name = "Your name"
+	name = "Dana Choi"
 	description = "Describe your website"
 
 	# Format dates with Go's time formatting
