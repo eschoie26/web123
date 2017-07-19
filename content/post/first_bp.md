@@ -8,9 +8,7 @@ date: 2017-07-17T13:09:13-06:00
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-##My first ever project in R [work in progress]
-
-###Introduction and Background (plus a little bit about me)
+*Introduction and Background (plus a little bit about me)*
 
 To first talk a little bit about my interests, I find joy in eating and cooking. If I were to choose one eccentric job for life, I  would choose to be a content creator on Youtube and just film myself eating and cooking. 
 So, as you can see, I love food. 
@@ -43,40 +41,19 @@ So at least for now, I figured that I need to look out for myself on what and wh
 Now, we can’t perform food inspection ourselves for every restaurants we visit. 
 As an average civilian, the most we can do (when deciding whether or not we can trust a restaurant) is checking its history of food inspection results.
 
-###The Data Set 
+*The Data Set*
 
 The data set I used was derived from inspections done by Chicago Department of Public Health’s Food Protection Program using a standardized procedure. 
 The [dataset](https://data.cityofchicago.org/Health-Human-Services/Food-Inspections/4ijn-s7e5/data) is comprised of inspection results from January 1, 2010 to the present (most recent: July 14th 2017). 
 
-Details on specific variables: 
-
-• Inspection type: An inspection can be one of the following types: canvass, the most
-common type of inspection performed at a frequency relative to the risk of the
-establishment; consultation, when the inspection is done at the request of the owner
-prior to the opening of the establishment; complaint, when the inspection is done in
-response to a complaint against the establishment; license, when the inspection is done
-as a requirement for the establishment to receive its license to operate; suspect food
-poisoning, when the inspection is done in response to one or more persons claiming to
-have gotten ill as a result of eating at the establishment (a specific type of complaint-
-based inspection); task-force inspection, when an inspection of a bar or tavern is done.
-Re-inspections can occur for most types of these inspections and are indicated as such.
-
-• Results: An inspection can pass, pass with conditions or fail. Establishments receiving a
-‘pass’ were found to have no critical or serious violations (violation number 1-14 and 15-
-29, respectively). Establishments receiving a ‘pass with conditions’ were found to have
-critical or serious violations, but these were corrected during the inspection.
-Establishments receiving a ‘fail’ were found to have critical or serious violations that
-were not correctable during the inspection. An establishment receiving a ‘fail’ does not
-necessarily mean the establishment’s licensed is suspended. Establishments found to
-be out of business or not located are indicated as such.
-
-• Violations: An establishment can receive one or more of 45 distinct violations (violation
-numbers 1-44 and 70). For each violation number listed for a given establishment, the
-requirement the establishment must meet in order for it to NOT receive a violation is
-noted, followed by a specific description of the findings that caused the violation to be
-issued. 
-
-Unsurprisingly, this data set was HUGE (151209 rows).  While Chicago Data Portal tried its best to help users make use of its data, I personally found it difficult to search up specific restaurant in mind and visualize the history of its inspection results. 
+Unsurprisingly, this data set was HUGE.  
+It had 17 variables with 151,209 entries
+``` {variables}
+##  `Inspection ID` `DBA Name`  `AKA Name` `License #` `Facility Type` `Risk`
+##  `Address` `City` `State` `Zip` `Inspection Date``Inspection Type`
+##  `Results` `Violations`  `Latitude`  `Longitude` `Location`
+```
+While Chicago Data Portal tried its best to help users make use of its data, I personally found it difficult to search up specific restaurant in mind and visualize the history of its inspection results. 
 
 So, I’ve set an ambitious goal of making this process easier and more efficient for local residents and visitors in Chicago. I am currently thinking of building an interactive map that will allow users to see the list of inspection results when they search up restaurants they wish to visit. 
 In addition, I wish to potentially create a twitterbot to inform followers the list of food inspection results for different restaurants in Chicago. Every day, the bot would scrape off the data from Chicago Data Portal(which is updated daily) and tweet the updated results.   
@@ -104,20 +81,21 @@ In this histogram, we see that the number of passes is far greater than the numb
 
 That's good, but what I really wanted to see was whether certain restaurant's food inspection results improve over time (Dates). So I looked into scatterplot instead. 
 
-```
+Unfortunately, the data set was so large (size 200 MB) that it was hard to visualize and get something out in ggplot just from its raw data frame. 
+
+``` 
 #Food_Inspections$`License #`=as.factor(Food_Inspections$`License #`)
 #ggplot(data = Food_Inspections, aes(x = `Inspection Date`, y = `License #`, color = result)) + 
 #  geom_point() 
 ```
 
-Unfortunately, the data set was so large (size 200 MB) that it was hard to visualize and get something out in ggplot just from its raw data frame. 
-
+![Number of Food Inspections by Results](/results_bar_graph.png)
 
 ###Data Cleaning and Wrangling 
 
 Took me most of the time doing this. 
 (copy and paste code)
-*each restaurant has unique license id 
+*each restaurant has a unique license id 
 *using dplyr and tidyr
 
 ###Experiment and analysis 
@@ -127,7 +105,11 @@ Just looked at 20 restaurants with most inspection results history (just so that
 
 ![Scatterplot of Top 20 Restaurants with most inspection results history](/top20_plotovertime.png)
 
-From our sample, restaurants pass 
+From our sample, restaurants do better, at least for the next few inspections, after they fail to pass the first time.
+This makes sense. If they repeatedly fail their food inspections, the word will spread and they will lose customers.
+I also doubt that the health department will allow such restaurant to continue to operate. Either way, those restaurants who repeatedly fails their food inspections will go out of business. 
+
+So now, I wanted to focus more on
 
 ###Further experiments and analysis 
 
@@ -143,6 +125,9 @@ Now I took closer look at variable called violations. Among restaurants with fai
 
 
 ###Sources
+
 http://digitaledition.chicagotribune.com/tribune/article_popover.aspx?guid=fffb81a2-3a38-4481-975c-d163e7ee9ba8
+
 https://data.cityofchicago.org/Health-Human-Services/Food-Inspections/4ijn-s7e5/data
+
 http://www.cbc.ca/news/health/restaurant-inspections-at-national-chains-uncover-repeated-major-violations-1.2605475
