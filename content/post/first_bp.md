@@ -1,9 +1,7 @@
 ---
 title: "Food Inspection Result Prediction"
 author: "Dana Choi"
-date: "18 July 2016"
-output: html_document
-runtime: shiny
+date: 2017-07-17T13:09:13-06:00
 ---
 
 ```{r setup, include=FALSE}
