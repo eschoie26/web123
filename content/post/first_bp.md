@@ -93,6 +93,7 @@ Based on this report, I started off with the hypothesis that food inspections ha
 ###Preliminary analysis 
 
 ![Number of Food Inspections by Results](/results_bar_graph.png)
+
 *NA includes inspecton results marked as "business not located", "out of business", "no entry", or "not ready".
 *We are going to consider restaurants who passed with conditions as still problematic even though their problems were fixe on-site during the inspection. 
 
