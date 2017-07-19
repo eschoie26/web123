@@ -11,6 +11,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ##My first ever project in R [work in progress]
 
 ###Introduction and Background (plus a little bit about me)
+
 To first talk a little bit about my interests, I find joy in eating and cooking. If I were to choose one eccentric job for life, I  would choose to be a content creator on Youtube and just film myself eating and cooking. 
 So, as you can see, I love food. 
 When I travel, my way of exploring the area is visiting local restaurant gems.
@@ -81,11 +82,13 @@ So, I’ve set an ambitious goal of making this process easier and more efficien
 In addition, I wish to potentially create a twitterbot to inform followers the list of food inspection results for different restaurants in Chicago. Every day, the bot would scrape off the data from Chicago Data Portal(which is updated daily) and tweet the updated results.   
 
 ###The Real Question of the Day 
+
 Before I go off doing those listed above, however, I thought I should first check whether this information (history of restaurant's inspection results) is a valuable information in the first place. What can this history of inspection results tell us? Should we give a second chance for restaurants with a history of one or more failure in passing inspection? Can we trust restaurants in Chicago? 
 
 If we don't see improvement in food inspection results over time, we can assume that restaurants with the history of failure in passing food inspection will likely be doing it again. 
 
 ###Hypothesis
+
 Canada’s biggest analysis of public health inspection reports from national chain restaurants done by [CBCMarketplace](link:http://www.cbc.ca/news/health/restaurant-inspections-at-national-chains-uncover-repeated-major-violations-1.2605475) found that major violations tended to continue even after restaurants were notified by inspectors.
 
 Based on this report, I started off with the hypothesis that food inspections have insignificant effects on improvin the quality of food establishment's performance in foodhandling within Chicagoland area.
@@ -111,12 +114,14 @@ Unfortunately, the data set was so large (size 200 MB) that it was hard to visua
 
 
 ###Data Cleaning and Wrangling 
+
 Took me most of the time doing this. 
 (copy and paste code)
 *each restaurant has unique license id 
 *using dplyr and tidyr
 
 ###Experiment and analysis 
+
 Created a subset of a data frame 
 Just looked at 20 restaurants with most inspection results history (just so that we keep the number of our levels low while maximizing data)
 
