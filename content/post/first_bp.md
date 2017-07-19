@@ -4,10 +4,6 @@ author: "Dana Choi"
 date: 2017-07-17T13:09:13-06:00
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
 *Introduction and Background (plus a little bit about me)*
 
 To first talk a little bit about my interests, I find joy in eating and cooking. If I were to choose one eccentric job for life, I  would choose to be a content creator on Youtube and just film myself eating and cooking. 
