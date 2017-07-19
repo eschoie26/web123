@@ -1,14 +1,8 @@
 ---
 title: "Food Inspection Result Prediction"
 author: "Dana Choi"
-date: "18 July 2016"
-output: html_document
-runtime: shiny
+date: 2017-07-19
 ---
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
 
 ##My first ever project in R [work in progress]
 
