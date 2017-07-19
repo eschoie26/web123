@@ -48,6 +48,7 @@ The data set I used was derived from inspections done by Chicago Department of P
 The [dataset](https://data.cityofchicago.org/Health-Human-Services/Food-Inspections/4ijn-s7e5/data) is comprised of inspection results from January 1, 2010 to the present (most recent: July 14th 2017). 
 
 Details on specific variables: 
+
 • Inspection type: An inspection can be one of the following types: canvass, the most
 common type of inspection performed at a frequency relative to the risk of the
 establishment; consultation, when the inspection is done at the request of the owner
@@ -58,6 +59,7 @@ poisoning, when the inspection is done in response to one or more persons claimi
 have gotten ill as a result of eating at the establishment (a specific type of complaint-
 based inspection); task-force inspection, when an inspection of a bar or tavern is done.
 Re-inspections can occur for most types of these inspections and are indicated as such.
+
 • Results: An inspection can pass, pass with conditions or fail. Establishments receiving a
 ‘pass’ were found to have no critical or serious violations (violation number 1-14 and 15-
 29, respectively). Establishments receiving a ‘pass with conditions’ were found to have
@@ -66,6 +68,7 @@ Establishments receiving a ‘fail’ were found to have critical or serious vio
 were not correctable during the inspection. An establishment receiving a ‘fail’ does not
 necessarily mean the establishment’s licensed is suspended. Establishments found to
 be out of business or not located are indicated as such.
+
 • Violations: An establishment can receive one or more of 45 distinct violations (violation
 numbers 1-44 and 70). For each violation number listed for a given establishment, the
 requirement the establishment must meet in order for it to NOT receive a violation is
@@ -97,13 +100,11 @@ In this histogram, we see that the number of passes is far greater than the numb
 
 That's good, but what I really wanted to see was whether certain restaurant's food inspection results improve over time (Dates). So I looked into scatterplot instead. 
 
-![Food inspection results over time by each restaurant in Chicagoland](/results_bar_graph.png)
 ```
 #Food_Inspections$`License #`=as.factor(Food_Inspections$`License #`)
 #ggplot(data = Food_Inspections, aes(x = `Inspection Date`, y = `License #`, color = result)) + 
 #  geom_point() 
 ```
-
 
 Unfortunately, the data set was so large (size 200 MB) that it was hard to visualize and get something out in ggplot just from its raw data frame. 
 
