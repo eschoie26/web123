@@ -4,7 +4,7 @@ author: "Dana Choi"
 date: 2017-07-17T13:09:13-06:00
 ---
 
-*Introduction and Background (plus a little bit about me)*
+**Introduction and Background (plus a little bit about me)**
 
 To first talk a little bit about my interests, I find joy in eating and cooking. If I were to choose one eccentric job for life, I  would choose to be a content creator on Youtube and just film myself eating and cooking. 
 So, as you can see, I love food. 
@@ -37,7 +37,7 @@ So at least for now, I figured that I need to look out for myself on what and wh
 Now, we can’t perform food inspection ourselves for every restaurants we visit. 
 As an average civilian, the most we can do (when deciding whether or not we can trust a restaurant) is checking its history of food inspection results.
 
-*The Data Set*
+**The Data Set**
 
 The data set I used was derived from inspections done by Chicago Department of Public Health’s Food Protection Program using a standardized procedure. 
 The [dataset](https://data.cityofchicago.org/Health-Human-Services/Food-Inspections/4ijn-s7e5/data) is comprised of inspection results from January 1, 2010 to the present (most recent: July 14th 2017). 
@@ -54,19 +54,19 @@ While Chicago Data Portal tried its best to help users make use of its data, I p
 So, I’ve set an ambitious goal of making this process easier and more efficient for local residents and visitors in Chicago. I am currently thinking of building an interactive map that will allow users to see the list of inspection results when they search up restaurants they wish to visit. 
 In addition, I wish to potentially create a twitterbot to inform followers the list of food inspection results for different restaurants in Chicago. Every day, the bot would scrape off the data from Chicago Data Portal(which is updated daily) and tweet the updated results.   
 
-###The Real Question of the Day 
+**The Real Question of the Day**
 
 Before I go off doing those listed above, however, I thought I should first check whether this information (history of restaurant's inspection results) is a valuable information in the first place. What can this history of inspection results tell us? Should we give a second chance for restaurants with a history of one or more failure in passing inspection? Can we trust restaurants in Chicago? 
 
 If we don't see improvement in food inspection results over time, we can assume that restaurants with the history of failure in passing food inspection will likely be doing it again. 
 
-###Hypothesis
+**Hypothesis**
 
 Canada’s biggest analysis of public health inspection reports from national chain restaurants done by [CBCMarketplace](link:http://www.cbc.ca/news/health/restaurant-inspections-at-national-chains-uncover-repeated-major-violations-1.2605475) found that major violations tended to continue even after restaurants were notified by inspectors.
 
 Based on this report, I started off with the hypothesis that food inspections have insignificant effects on improvin the quality of food establishment's performance in foodhandling within Chicagoland area.
 
-###Preliminary analysis 
+**Preliminary analysis**
 
 ![Number of Food Inspections by Results](/results_bar_graph.png)
 
@@ -87,14 +87,14 @@ Unfortunately, the data set was so large (size 200 MB) that it was hard to visua
 
 ![Number of Food Inspections by Results](/results_bar_graph.png)
 
-###Data Cleaning and Wrangling 
+**Data Cleaning and Wrangling** 
 
 Took me most of the time doing this. 
 (copy and paste code)
 *each restaurant has a unique license id 
 *using dplyr and tidyr
 
-###Experiment and analysis 
+**Experiment and analysis** 
 
 Created a subset of a data frame 
 Just looked at 20 restaurants with most inspection results history (just so that we keep the number of our levels low while maximizing data)
@@ -107,7 +107,7 @@ I also doubt that the health department will allow such restaurant to continue t
 
 So now, I wanted to focus more on
 
-###Further experiments and analysis 
+**Further experiments and analysis** 
 
 data wrangling to just have a data frame of res
 
@@ -117,10 +117,10 @@ created subset of that data frame (again, top 20 restaurants with most failure r
 Now I took closer look at variable called violations. Among restaurants with failure records, do they repeatedly make same violations? 
 
 
-###Conclusion
+**Conclusion**
 
 
-###Sources
+**Sources**
 
 http://digitaledition.chicagotribune.com/tribune/article_popover.aspx?guid=fffb81a2-3a38-4481-975c-d163e7ee9ba8
 
