@@ -79,6 +79,30 @@ In addition, I wish to potentially create a twitterbot to inform followers the l
   Unfortunately, the data set was so large (size 200 MB) that it was hard to visualize and get something out in ggplot just from its raw data frame. 
 
 
+**Data Cleaning and Wrangling**
+Took me most of the time doing this. 
+(copy and paste code)
+*each restaurant has unique license id 
+*using dplyr and tidyr
+
+**Experiment and analysis**
+Created a subset of a data frame 
+Just looked at 20 restaurants with most inspection results history (just so that we keep the number of our levels low while maximizing data)
+
+![Scatterplot of Top 20 Restaurants with most inspection results history](/top20_plotovertime.png)
+
+From our sample, restaurants pass 
+
+**Further experiments and analysis**
+
+data wrangling to just have a data frame of res
+
+data frame still too large. 
+
+created subset of that data frame (again, top 20 restaurants with most failure records)
+Now I took closer look at variable called violations. Among restaurants with failure records, do they repeatedly make same violations? 
+
+
 **Sources**
 
 http://digitaledition.chicagotribune.com/tribune/article_popover.aspx?guid=fffb81a2-3a38-4481-975c-d163e7ee9ba8
