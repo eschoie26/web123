@@ -71,40 +71,12 @@ In addition, I wish to potentially create a twitterbot to inform followers the l
 #  geom_point() 
 ```
 
-![Scatterplot of Results]
+![Scatterplot of Results](/scatterresultall.png)
   
+  
+![Scatterplot of Results](/resultallscatter.png)
+
   Unfortunately, the data set was so large (size 200 MB) that it was hard to visualize and get something out in ggplot just from its raw data frame. 
-
-
-**Data Cleaning and Wrangling** 
-
-Took me most of the time doing this. 
-(copy and paste code)
-*each restaurant has a unique license id 
-*using dplyr and tidyr
-
-**Experiment and analysis** 
-
-Created a subset of a data frame 
-Just looked at 20 restaurants with most inspection results history (just so that we keep the number of our levels low while maximizing data)
-
-![Scatterplot of Top 20 Restaurants with most inspection results history](/top20_plotovertime.png)
-
-  From our sample, restaurants do better, at least for the next few inspections, after they fail to pass the first time.This makes sense. If they repeatedly fail their food inspections, the word will spread and they will lose customers.I also doubt that the health department will allow such restaurant to continue to operate. Either way, those restaurants who repeatedly fails their food inspections will go out of business. 
-
-  So now, I wanted to focus more on 
-
-**Further experiments and analysis** 
-
-data wrangling to just have a data frame of res
-
-data frame still too large. 
-
-created subset of that data frame (again, top 20 restaurants with most failure records)
-Now I took closer look at variable called violations. Among restaurants with failure records, do they repeatedly make same violations? 
-
-
-**Conclusion**
 
 
 **Sources**
